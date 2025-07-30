@@ -10,12 +10,9 @@ app.use(express.json());
 app.use(cors({
   origin: [
     'http://localhost:5173',
+    'https://funny-fairy-a307db.netlify.app',
     'https://netlify.app',
-    'https://*.netlify.app',
-    'https://vercel.app', 
-    'https://*.vercel.app',
-    'https://github.io',
-    'https://*.github.io'
+    'https://vercel.app'
   ],
   credentials: true
 }));
