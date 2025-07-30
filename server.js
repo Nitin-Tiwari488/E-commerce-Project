@@ -8,9 +8,15 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? process.env.FRONTEND_URL 
-    : 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',
+    'https://netlify.app',
+    'https://*.netlify.app',
+    'https://vercel.app', 
+    'https://*.vercel.app',
+    'https://github.io',
+    'https://*.github.io'
+  ],
   credentials: true
 }));
 
