@@ -11,6 +11,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'https://funny-fairy-a307db.netlify.app',
+    'https://ecommerceproject1707.netlify.app',
     'https://netlify.app',
     'https://vercel.app'
   ],
